@@ -11,7 +11,7 @@ export class NewProductComponent {
 
   constructor(private fb : FormBuilder) {
   }
-
+// commit test
   ngOnInit(): void{
     this.productFormGroup=this.fb.group({
       name : this.fb.control(null,[Validators.required,Validators.minLength(4)]),
